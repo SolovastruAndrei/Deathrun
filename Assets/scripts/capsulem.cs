@@ -6,12 +6,19 @@ public class capsulem: MonoBehaviour
     public float speed = 6.0f;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
+    public float currentspeed ;
+    public float currentjumpSpeed ;
+    public float currentgravity ;
+    
 
     private Vector3 moveDirection = Vector3.zero;
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        currentspeed = speed;
+        currentjumpSpeed = jumpSpeed;
+        currentgravity = gravity;
     }
 
     void Update()
@@ -42,5 +49,24 @@ public class capsulem: MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        switch(hit.gameObject.tag)
+        {
+            case "SpeedPad":
+                speed = 25f;
+                break;
+            case "JumpPad":
+                jumpSpeed = 25f;
+                break;
+            case "SlowPad":
+                speed = 0.5f;
+                break;
+            case "Ground":
+                speed = currentspeed;
+                jumpSpeed = currentjumpSpeed;
+                break;
+        }
     }
 }
