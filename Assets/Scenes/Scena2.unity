@@ -160,11 +160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5362673148241724174, guid: 8deb64e7eb9c7d649a43be414166ae89, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000019024561
+      value: -0.000000019024561
       objectReference: {fileID: 0}
     - target: {fileID: 5362673148241724174, guid: 8deb64e7eb9c7d649a43be414166ae89, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000036997059
+      value: 0.0000000036997059
       objectReference: {fileID: 0}
     - target: {fileID: 5362673148241724174, guid: 8deb64e7eb9c7d649a43be414166ae89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -232,7 +232,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3ae9b603d13780747a530b27cfb94f86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -338,6 +338,11 @@ PrefabInstance:
       objectReference: {fileID: 1438085673}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8f9cd6e99987364288c5a2194ca6edf, type: 3}
+--- !u!1 &442467091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 963429202405415894, guid: a8f9cd6e99987364288c5a2194ca6edf, type: 3}
+  m_PrefabInstance: {fileID: 442467090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &467468504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,15 +380,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936740862153628760, guid: 91084f729eaa8bc4b85a4fa595049396, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.2116997
+      value: 0.21169968
       objectReference: {fileID: 0}
     - target: {fileID: 8936740862153628760, guid: 91084f729eaa8bc4b85a4fa595049396, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000051533853
+      value: -0.0000000145634225
       objectReference: {fileID: 0}
     - target: {fileID: 8936740862153628760, guid: 91084f729eaa8bc4b85a4fa595049396, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000011162707
+      value: 0.0000000031545708
       objectReference: {fileID: 0}
     - target: {fileID: 8936740862267811920, guid: 91084f729eaa8bc4b85a4fa595049396, type: 3}
       propertyPath: m_RootOrder
@@ -451,19 +456,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936740862301654160, guid: 91084f729eaa8bc4b85a4fa595049396, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000016937612
+      value: -0.000000016937612
       objectReference: {fileID: 0}
     - target: {fileID: 8936740862301654160, guid: 91084f729eaa8bc4b85a4fa595049396, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000030293272
+      value: 0.0000000030293272
       objectReference: {fileID: 0}
     - target: {fileID: 8936740862973071502, guid: 91084f729eaa8bc4b85a4fa595049396, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018872266
+      value: -0.000000018872266
       objectReference: {fileID: 0}
     - target: {fileID: 8936740862973071502, guid: 91084f729eaa8bc4b85a4fa595049396, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000037298746
+      value: 0.0000000037298746
       objectReference: {fileID: 0}
     - target: {fileID: 8936740863800101470, guid: 91084f729eaa8bc4b85a4fa595049396, type: 3}
       propertyPath: m_FollowOffset.y
@@ -827,3 +832,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 963429202405415895, guid: a8f9cd6e99987364288c5a2194ca6edf, type: 3}
   m_PrefabInstance: {fileID: 442467090}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2117808634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442467091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e217557c3166c1479b0174e52fa4e6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whatIsWall:
+    serializedVersion: 2
+    m_Bits: 0
+  wallrunForce: 300
+  maxWallrunTime: 2
+  maxWallSpeed: 30
+  maxWallRunCameraTilt: 25
+  wallRunCameraTilt: 0
+  playerCam: {fileID: 0}
+  orientation: {fileID: 0}
+  moveSpeed: 4500
+  maxSpeed: 20
+  grounded: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 128
+  counterMovement: 0.175
+  maxSlopeAngle: 35
+  slideForce: 400
+  slideCounterMovement: 0.2
+  crouchGravityMultiplier: 0
+  jumpForce: 550
+  startDoubleJumps: 1
+  x: 0
+  y: 0
+  dashForce: 0
+  dashCooldown: 0
+  dashTime: 0
+  maxRocketTime: 0
+  rocketForce: 0
+  maxSonicSpeed: 0
+  sonicSpeedForce: 0
+  timeBetweenNextSonicBoost: 0
+  flashCooldown: 0
+  flashRange: 0
+  maxFlashesLeft: 0
+  flashesLeft: 3
+  climbForce: 0
+  maxClimbSpeed: 0
+  whatIsLadder:
+    serializedVersion: 2
+    m_Bits: 0
