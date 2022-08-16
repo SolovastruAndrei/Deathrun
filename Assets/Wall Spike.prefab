@@ -1434,7 +1434,7 @@ GameObject:
   - component: {fileID: 1035181382669258752}
   m_Layer: 0
   m_Name: Wall Spike
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1472,6 +1472,7 @@ GameObject:
   - component: {fileID: 1035181383155782985}
   - component: {fileID: 1035181383155782991}
   - component: {fileID: 236841345}
+  - component: {fileID: 1546847070}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Enemy
@@ -1487,7 +1488,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035181383155783351}
   m_LocalRotation: {x: -0, y: 0.38268322, z: -0, w: 0.9238797}
-  m_LocalPosition: {x: -5.686001, y: 1.45, z: -9.518005}
+  m_LocalPosition: {x: -5.686001, y: 3.92, z: -9.518005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2518,5 +2519,19 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8893739, y: 2.2095146, z: 1.915386}
-  m_Center: {x: -0.94465643, y: 0.554636, z: -0.20384046}
+  m_Size: {x: 1.9103413, y: 2.1677306, z: 1.915386}
+  m_Center: {x: -0.9551401, y: 0.533744, z: -0.20384051}
+--- !u!114 &1546847070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035181383155783351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ba5fc145dedca43b99123301ae8205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  respawnPoint: {fileID: 0}
