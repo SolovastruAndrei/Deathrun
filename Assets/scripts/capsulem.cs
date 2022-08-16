@@ -42,6 +42,7 @@ public class capsulem: MonoBehaviour
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
     }
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
@@ -50,6 +51,7 @@ public class capsulem: MonoBehaviour
         }
 
     }
+    */
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         switch(hit.gameObject.tag)
