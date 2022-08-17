@@ -2,7 +2,8 @@ using System.Collections;
 using UnityEngine;
 
 public class Trap : MonoBehaviour
-{ 
+{
+    public float delayAnim = 1f;
     void Start()
     {
         StartCoroutine(Go());
@@ -12,7 +13,7 @@ public class Trap : MonoBehaviour
         while(true)
         {
             FindObjectOfType<Animation>().Play();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(delayAnim);
         }
     }
 }
