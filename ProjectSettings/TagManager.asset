@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - JumpPad
   - SlowPad
+  - Tinta
   layers:
   - Default
   - TransparentFX
