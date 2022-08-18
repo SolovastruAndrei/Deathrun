@@ -1433,7 +1433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035181382669258752}
   m_Layer: 0
-  m_Name: Wall Spike No Animation
+  m_Name: Wall Spike
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2487,7 +2487,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035181383155783351}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 8566e1d83f87b4741b4ff8147612dd78, type: 2}
   m_Animations:
