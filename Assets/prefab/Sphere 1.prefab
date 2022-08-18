@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2915337508788373944}
   m_Layer: 0
   m_Name: Sphere 1
-  m_TagString: Enemy
+  m_TagString: Tinta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 2915337508788373944}
-  player: {fileID: 0}
+  player: {fileID: 5562207826976210160, guid: 5e91849645478054098aa84e374d42cb, type: 3}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 128
@@ -121,8 +121,8 @@ MonoBehaviour:
     m_Bits: 256
   health: 100
   walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 5
-  timeBetweenAttacks: 1
+  walkPointRange: 6
+  timeBetweenAttacks: 0.5
   projectile: {fileID: 3907085886148394743, guid: 2e8e4d6ee36ff9048a710b91e22b9d77, type: 3}
   sightRange: 10
   attackRange: 2
@@ -138,8 +138,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 12
+  m_Acceleration: 12
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
