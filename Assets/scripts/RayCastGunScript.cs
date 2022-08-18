@@ -13,7 +13,7 @@ public class RayCastGunScript : MonoBehaviour
     public float laserDuretion = 0.05f;
     LineRenderer laserLine;
     float fireTimer;
-    int tinte = 0;
+    public int tinte = 0;
     public TMP_Text tinteText;
     private void Awake()
     {
