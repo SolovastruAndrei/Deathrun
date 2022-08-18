@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using System;
 [RequireComponent(typeof(LineRenderer))]
 public class RayCastGunScript : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class RayCastGunScript : MonoBehaviour
     public float laserDuretion = 0.05f;
     LineRenderer laserLine;
     float fireTimer;
+    int tinte = 0;
+    public TMP_Text tinteText;
     private void Awake()
     {
         laserLine = GetComponent<LineRenderer>();
@@ -30,6 +34,8 @@ public class RayCastGunScript : MonoBehaviour
                 if (hit.transform.gameObject.CompareTag("Tinta"))
                 {
                     Destroy(hit.transform.gameObject);
+                    tinte++;
+                    tinteText.text = "Tinte Distruse: " + tinte;
                 }
             }
             else
