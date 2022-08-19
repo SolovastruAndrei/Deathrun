@@ -19,6 +19,7 @@ public class Respawn : MonoBehaviour
             deathText.text = "Number of deaths: " + deaths;
             if(deaths>10)
             {
+                deaths = 0;
                 gameover.Setup();
             }
         }

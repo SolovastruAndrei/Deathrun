@@ -26,10 +26,11 @@ public class GameoverScript : MonoBehaviour
     }
     public void RestartButton()
     {
-        SceneManager.LoadScene("Scena principala");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void ExitButton()
     {
-
+        Debug.Log("Quitting");
+        Application.Quit();
     }
 }
