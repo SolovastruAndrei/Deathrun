@@ -5,7 +5,7 @@ using UnityEngine;
 public class DestroyOnClick : MonoBehaviour
 {
     public RayCastGunScript raycast;
- 
+
     private void OnMouseDown()
     {
         raycast.Tinte();

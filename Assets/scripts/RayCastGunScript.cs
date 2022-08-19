@@ -6,6 +6,7 @@ using System;
 [RequireComponent(typeof(LineRenderer))]
 public class RayCastGunScript : MonoBehaviour
 {
+    public GameoverScript GameOverScreen;
     public Camera playerCamera;
     public Transform laserOrigin;
     public float gunRange=50f;
@@ -57,5 +58,6 @@ public class RayCastGunScript : MonoBehaviour
     {
         tinte++;
         tinteText.text = "Tinte Distruse: " + tinte;
+        GameOverScreen.tinte(tinte);
     }
 }

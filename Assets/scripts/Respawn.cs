@@ -5,6 +5,7 @@ using TMPro;
 using System;
 public class Respawn : MonoBehaviour
 {
+    public GameoverScript gameover;
     static int deaths = 0;
     [SerializeField] private Transform player;
     [SerializeField] private Transform respawnPoint;
@@ -16,6 +17,10 @@ public class Respawn : MonoBehaviour
             player.transform.position = respawnPoint.transform.position;
             deaths++;
             deathText.text = "Number of deaths: " + deaths;
+            if(deaths>10)
+            {
+                gameover.Setup();
+            }
         }
     }
 }

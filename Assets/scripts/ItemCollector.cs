@@ -8,6 +8,7 @@ using TMPro;
 
 public class ItemCollector : MonoBehaviour
 {
+    public GameoverScript gameOverScript;
     static int coins = 0;
     public TMP_Text coinsText;
     private void OnTriggerEnter(Collider other)
@@ -17,6 +18,7 @@ public class ItemCollector : MonoBehaviour
             Destroy(other.gameObject);
             coins++;
             coinsText.text = "Coins: " + coins;
+            gameOverScript.coins(coins);
         }
     }
 
