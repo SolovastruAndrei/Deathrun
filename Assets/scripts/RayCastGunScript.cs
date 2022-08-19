@@ -13,7 +13,7 @@ public class RayCastGunScript : MonoBehaviour
     public float laserDuretion = 0.05f;
     LineRenderer laserLine;
     float fireTimer;
-    public int tinte = 0;
+    public static int tinte = 0;
     public TMP_Text tinteText;
     private void Awake()
     {
@@ -34,8 +34,9 @@ public class RayCastGunScript : MonoBehaviour
                 if (hit.transform.gameObject.CompareTag("Tinta"))
                 {
                     Destroy(hit.transform.gameObject);
-                    tinte++;
-                    tinteText.text = "Tinte Distruse: " + tinte;
+                    Tinte();
+                   // tinte++;
+                   // tinteText.text = "Tinte Distruse: " + tinte;
                 }
             }
             else
@@ -51,5 +52,10 @@ public class RayCastGunScript : MonoBehaviour
         laserLine.enabled = true;
         yield return new WaitForSeconds(laserDuretion);
         laserLine.enabled = false;
+    }
+    public void Tinte()
+    {
+        tinte++;
+        tinteText.text = "Tinte Distruse: " + tinte;
     }
 }

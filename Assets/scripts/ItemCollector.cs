@@ -8,7 +8,7 @@ using TMPro;
 
 public class ItemCollector : MonoBehaviour
 {
-    int coins = 0;
+    static int coins = 0;
     public TMP_Text coinsText;
     private void OnTriggerEnter(Collider other)
     {
