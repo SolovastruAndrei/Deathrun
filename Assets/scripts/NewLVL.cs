@@ -9,7 +9,7 @@ public class NewLVL : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Scena 2");
+            SceneManager.LoadScene("Scena3");
         }
     }
 }
