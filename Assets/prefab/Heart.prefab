@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3469011755879251825}
   - component: {fileID: 4131296695030507944}
-  - component: {fileID: 3603152767149569247}
   - component: {fileID: 7363188537510178098}
   - component: {fileID: 4463716267317528998}
-  - component: {fileID: 562016326894579497}
+  - component: {fileID: 2657022110942669901}
+  - component: {fileID: 46866471}
   m_Layer: 0
   m_Name: Heart
-  m_TagString: Untagged
+  m_TagString: Inima
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6206855160536242828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1002.0354, y: 5, z: -3012.2}
-  m_LocalScale: {x: 1, y: 1, z: 1.5878232}
+  m_LocalScale: {x: 0.003, y: 0.003, z: 0.0057909}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1910,52 +1910,11 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 626
+  m_VersionIndex: 635
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!114 &3603152767149569247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6206855160536242828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb977b126bc1b4f15813dcf9da9bb600, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Points:
-  - {x: 0, y: 0, z: 0}
-  - {x: -51.056152, y: 0, z: -0.23364258}
-  - {x: -90.97583, y: 0, z: -3.4089355}
-  - {x: -136.42334, y: 0, z: 5.2077637}
-  - {x: -168.69507, y: 0, z: 19.70044}
-  - {x: -188.33313, y: 0, z: 33.04663}
-  - {x: -201.1167, y: 0, z: 51.93164}
-  - {x: -206.19775, y: 0, z: 90.279785}
-  - {x: -180.76709, y: 0, z: 120.025635}
-  - {x: -150.35815, y: 0, z: 128.69824}
-  - {x: -111.41431, y: 0, z: 135.5083}
-  - {x: -72.749756, y: 0, z: 135.44995}
-  - {x: -29.813477, y: 0, z: 135.38501}
-  - {x: 4.0670166, y: 0, z: 132.0459}
-  - {x: 47.204407, y: 0, z: 127.15015}
-  - {x: 85.06525, y: 0, z: 115.93848}
-  - {x: 131.93677, y: 0, z: 98.69751}
-  - {x: 163.58716, y: 0, z: 86.42554}
-  - {x: 191.42456, y: 0, z: 77.44092}
-  - {x: 223.32971, y: 0, z: 67.14307}
-  - {x: 253.32593, y: 0, z: 55.477783}
-  - {x: 279.84186, y: 0, z: 45.459473}
-  - {x: 319.13843, y: 0, z: 26.983643}
-  - {x: 360.44678, y: 0, z: 6.0876465}
-  m_Extrude: 48.894493
-  m_EditMode: 0
-  m_FlipNormals: 0
-  isOnGrid: 1
 --- !u!23 &7363188537510178098
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2006,17 +1965,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6206855160536242828}
   m_Mesh: {fileID: 0}
---- !u!64 &562016326894579497
-MeshCollider:
+--- !u!114 &2657022110942669901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6206855160536242828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1bc80f894180540a9d738921bc2bec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0.5
+  speedY: 0
+  speedZ: 0
+--- !u!135 &46866471
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6206855160536242828}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Radius: 283.32227
+  m_Center: {x: 77.12451, y: 24.44641, z: 4.707775}

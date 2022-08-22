@@ -6,7 +6,7 @@ using System;
 public class Respawn : MonoBehaviour
 {
     public GameoverScript gameover;
-    static int deaths = 0;
+    public static int lives = 10;
     [SerializeField] private Transform player;
     [SerializeField] private Transform respawnPoint;
     public TMP_Text deathText;
@@ -15,11 +15,11 @@ public class Respawn : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             player.transform.position = respawnPoint.transform.position;
-            deaths++;
-            deathText.text = "Number of deaths: " + deaths;
-            if(deaths>10)
+            lives--;
+            deathText.text = "Lives: " + lives;
+            if(lives<1)
             {
-                deaths = 0;
+                lives = 11;
                 gameover.Setup();
             }
         }
