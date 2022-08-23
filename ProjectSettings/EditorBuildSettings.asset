@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/prefab/Scenes/Menu.unity
+    guid: 123c052c377bb504abb9e4d30f0f1f69
+  - enabled: 1
     path: Assets/prefab/Scenes/Scena principala.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -14,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/prefab/Scenes/Testare.unity
     guid: ae45f39bedb5d85468e6907c4840ecbb
+  - enabled: 1
+    path: Assets/prefab/Scenes/Credits.unity
+    guid: 19c19f10abba0cf4e8fbf438cc7c8db8
   m_configObjects: {}
