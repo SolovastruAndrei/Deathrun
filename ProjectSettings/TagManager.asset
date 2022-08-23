@@ -12,6 +12,7 @@ TagManager:
   - Tinta
   - Coin
   - Inima
+  - Death
   layers:
   - Default
   - TransparentFX
