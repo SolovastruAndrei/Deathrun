@@ -14,14 +14,20 @@ public class Respawn : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            player.transform.position = respawnPoint.transform.position;
-            lives--;
-            deathText.text = "Lives: " + lives;
-            if(lives<1)
-            {
-                lives = 11;
-                gameover.Setup();
-            }
+
+            ScadereViata();
+        }
+           
+    }
+    public void ScadereViata()
+    {
+        player.transform.position = respawnPoint.transform.position;
+        lives--;
+        deathText.text = "Lives: " + lives;
+        if (lives < 1)
+        {
+            lives = 11;
+            gameover.Setup();
         }
     }
  
