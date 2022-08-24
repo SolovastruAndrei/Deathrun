@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerTrigger : MonoBehaviour
 {
-    public GameObject player;
+    public Transform respawnPoint;
+    public Transform player;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Enemy"))
+        if(other.CompareTag("Player"))
         {
-            player.SetActive(false);
-            FindObjectOfType<GameManager>().GameOver();
+            player.position = respawnPoint.position;
         }
     }
 }
